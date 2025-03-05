@@ -1,0 +1,54 @@
+.banner {
+    background-color: var(--cor-links); /* Define a cor de fundo do banner */
+    padding: 80px 12.5%; /* Adiciona espaçamento interno ao banner */
+    display: grid; /* Usa um layout de grid para organizar o conteúdo */
+    grid-template-columns: repeat(2, 1fr); /* Cria duas colunas iguais (uma para o texto e outra para a imagem) */
+    background-image: url(/assets/banner-background.png); /* Define uma imagem de fundo */
+    background-position: bottom; /* Posiciona a imagem de fundo na parte inferior */
+    background-repeat: no-repeat; /* Evita que a imagem de fundo se repita */
+    align-items: center; /* Alinha os elementos verticalmente no centro */
+    gap: 56px; /* Define o espaçamento entre os elementos do banner */
+}
+
+.banner__container-titulo {
+    font-family: var(--cor-titulo); /* Define a fonte do título */
+    color: var(--cor-destaque-principal); /* Define a cor principal do título */
+    font-weight: 800; /* Torna o título mais negrito */
+    font-size: 70px; /* Define o tamanho da fonte do título */
+    line-height: 91.2px; /* Define o espaçamento entre linhas do título */
+    padding-bottom: 48px; /* Adiciona espaçamento na parte inferior do título */
+}
+
+.banner__container-titulo span {
+    color: var(--cor-destaque-secundario); /* Define a cor do texto destacado dentro do título */
+}
+
+.banner__container-botao {
+    padding: 16px 24px; /* Adiciona espaçamento interno ao botão */
+    color: var(--cor-de-fundo); /* Define a cor do texto do botão */
+    font-weight: 600; /* Define o peso da fonte do botão */
+    font-family: var(--fonte-texto); /* Define a fonte do botão */
+    line-height: 36px; /* Define o espaçamento entre linhas do botão */
+    font-size: 24px; /* Define o tamanho da fonte do botão */
+    background-color: var(--cor-fundo-botao); /* Define a cor de fundo do botão */
+    border-radius: 32px; /* Arredonda as bordas do botão */
+    border: none; /* Remove a borda do botão */
+}
+
+.banner__imagem {
+    width: 100%; /* Garante que a imagem ocupe toda a largura da coluna */
+}
+
+/* Estilos para telas menores (responsividade) */
+@media screen and (max-width: 1280px) {
+    .banner {
+        grid-template-columns: 1fr; /* Muda o layout para uma única coluna */
+        text-align: center; /* Centraliza o texto */
+        padding: 80px 38px; /* Reduz o espaçamento lateral */
+    }
+
+    .banner__container-titulo {
+        font-size: 61px; /* Reduz o tamanho da fonte do título para telas menores */
+        line-height: 73.2px; /* Ajusta o espaçamento entre linhas do título */
+    }
+}
