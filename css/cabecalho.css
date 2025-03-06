@@ -42,6 +42,9 @@
     font-family: var(--fonte-texto); /* Define a fonte do texto do input */
     color: var(--cor-links); /* Define a cor do texto dentro do input */
 }
+.cabecalho__nav_list_input:hover{
+    background-color: rgb(245, 229, 247);
+}
 
 .search-icon {
     position: absolute; /* Permite posicionar o ícone sobre o input */
