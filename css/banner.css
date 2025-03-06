@@ -34,6 +34,9 @@
     border-radius: 32px; /* Arredonda as bordas do botão */
     border: none; /* Remove a borda do botão */
 }
+.banner__container-botao:hover{
+    background-color: rgb(144, 144, 250);
+}
 
 .banner__imagem {
     width: 100%; /* Garante que a imagem ocupe toda a largura da coluna */
